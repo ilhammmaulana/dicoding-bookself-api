@@ -1,0 +1,23 @@
+{
+  "name": "bookself-api",
+  "version": "1.0.0",
+  "description": "Bookself api for dicoding course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilhammmaulana/dicoding-bookself-api.git"
+  },
+  "keywords": [
+    "dicoding",
+    "bookself-api"
+  ],
+  "author": "ilhammmaulana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilhammmaulana/dicoding-bookself-api/issues"
+  },
+  "homepage": "https://github.com/ilhammmaulana/dicoding-bookself-api#readme"
+}
