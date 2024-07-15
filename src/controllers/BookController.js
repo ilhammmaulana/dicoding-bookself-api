@@ -142,8 +142,6 @@ const createBook = (request, h) => {
         message: 'Buku gagal ditambahkan',
     }).code(500);
 }
-
-
 const getAllBooks = (request, h) => {
     let filteredBooks = [...books];
 
@@ -174,10 +172,17 @@ const getAllBooks = (request, h) => {
         );
     }
 
+    // Map to only include id, name, and publisher #fix revisi 
+    const responseBooks = filteredBooks.map(({ id, name, publisher }) => ({
+        id,
+        name,
+        publisher,
+    }));
+
     return h.response({
         status: 'success',
         data: {
-            books: filteredBooks,
+            books: responseBooks,
         },
     }).code(200);
 };
